@@ -1,0 +1,152 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+    }
+
+    .nav-item {
+        list-style-type: none;
+        width: 30%;
+    }
+
+    .nav-item a {
+        color: white;
+        padding: 15px;
+        text-align: center;
+        flex: 1;
+        background-color: #555;
+        text-decoration: none;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .nav-item a:hover {
+        background-color: #777;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .image-box {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        border: 2px solid #000;
+    }
+
+    .image-box img {
+        max-width: 60%;
+        width: 600px;
+        height: auto;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 3rem;
+        text-align: left;
+        margin: 30px;
+    }
+
+    aside {
+        float: right;
+        font-size: 2rem;
+        width: 30%;
+        text-align: right;
+        margin-right: 30px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        font-size: 1.3rem;
+    }
+
+    .nav-item {
+        list-style-type: none;
+    }
+
+    .nav-item a {
+        color: white;
+        padding: 15px;
+        text-align: center;
+        background-color: #555;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid #777;
+    }
+
+    .nav-item a:hover {
+        background-color: #777;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .image-box {
+        margin-bottom: 20px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .image-box img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333;
+        box-shadow: 10px 10px 5px #4CAF50;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2rem;
+        text-align: left;
+        margin: 30px;
+    }
+
+    aside {
+        display: none;
+    }
+}

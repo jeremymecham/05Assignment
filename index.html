@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 5</h1>
+    </header>
+    
+    <nav>
+        <ul class="navbar-container">
+            <li class="nav-item"><a href="#image1">Nav 1</a></li>
+            <li class="nav-item"><a href="#image2">Nav 2</a></li>
+            <li class="nav-item"><a href="#">Nav 3</a></li>
+        </ul>
+    </nav>
+    
+    <section class="container">
+        <div class="image-box">
+            <h2>Mobile Wireframe</h2>
+            <img id="image1" src="app_wireframe.png" alt="Image 1">
+            <p>This is my mobile wireframe. I first made the title at the top as I do in the desktop wireframe. I wanted the navigation bar to be a top-down navigation bar. I also wanted my pictures to be top down instead of side to side.</p>
+        </div>
+        <div class="image-box">
+            <h2>Desktop Wireframe</h2>
+            <img id="image2" src="website_wireframe02.png" alt="Image 2">
+            <p>This is my desktop wireframe. I have the header up at the top. The navigation bar will be horizontal and is done using flexbox since it makes the navigation buttons nice, even, and scalable. The images (process boxes that I forgot to rename) are horizontal to each other in a flex box to have equal spacing.</p>
+            <aside>This is some aside text. It takes up 30% of the container width and will disappear when viewed in mobile resolutions.</aside>
+            <p>This text is beside the aside, which allows me to add little notes or different content aside other content, such as this text aside the paragraph.</p>
+        </div>
+    </section>
+</body>
+</html>
